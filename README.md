@@ -18,6 +18,11 @@ git commit -m "sauvegarde"
 git push
 ```
 
+```bash
+cd ~/.dotfiles
+git add . && git commit -m "Save" && git push
+```
+
 ## Récupérer les modifications sur les autres machines
 ```bash
 cd ~/.dotfiles
