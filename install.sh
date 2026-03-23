@@ -1,8 +1,17 @@
 #!/bin/bash
 
 # Install Zsh
+sudo apt update
 sudo apt install -y zsh
-chsh -s $(which zsh)
+
+# Shell par défaut
+ZSH_PATH=$(which zsh)
+if [ -n "$ZSH_PATH" ]; then
+    chsh -s "$ZSH_PATH"
+else
+    echo "Zsh non trouvé, chsh ignoré"
+    exit 1
+fi
 
 # Clone plugins
 git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
