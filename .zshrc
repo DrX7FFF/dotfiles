@@ -25,3 +25,6 @@ alias ls='ls --color=auto'
 
 # Config Powerlevel10k
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Config locale spécifique à la machine
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
