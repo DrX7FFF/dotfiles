@@ -31,3 +31,7 @@ alias ls='ls --color=auto'
 
 # Config locale spécifique à la machine
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# Ctrl+→ et Ctrl+←
+bindkey "^[[1;5C" forward-word   # Ctrl+→
+bindkey "^[[1;5D" backward-word  # Ctrl+←
