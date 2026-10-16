@@ -6,6 +6,9 @@ fi
 # Path
 export PATH="$HOME/.local/bin:$PATH"
 
+# Agent SSH Bitwarden (Flatpak), si présent
+[[ -S ~/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock ]] && export SSH_AUTH_SOCK=~/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
+
 # Historique
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
