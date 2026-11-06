@@ -5,6 +5,7 @@ fi
 
 # Path
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Historique
 HISTFILE=~/.zsh_history
